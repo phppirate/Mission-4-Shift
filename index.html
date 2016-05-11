@@ -6,32 +6,34 @@
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="assets/css/shift.css">
         <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
     </head>
     <body>
 
-        <div class="dashboard openSidebar">
+        <div class="dashboard">
 
             <div class="sidebar">
                 <div class="sidebar-header">
-                    Supporter <span class="microtext">by Mission-4</span>
+                    Shift <span class="microtext">by Mission-4</span>
                 </div>
 
                 <div class="nav-header">
-                    Hidalgo Connect
-                    <a href="/project/hidalgo-connect/switchproject" class="pull-right action-link"><i class="ti-control-shuffle"></i></a>
+                    Site Administration
+                    <a href="#" class="pull-right action-link"><i class="ti-control-shuffle"></i></a>
                 </div>
                 <nav>
-                    <a href="/project/hidalgo-connect"><i class="item-icon ti-dashboard"></i> Dashboard</a>
+                    <a href="#"><i class="item-icon ti-dashboard"></i> Dashboard</a>
+                    <a href="#"><i class="item-icon ti-user"></i> Users</a>
+                    <a href="#"><i class="item-icon ti-file"></i> Pages</a>
                 </nav>
 
-                <div class="nav-header">Manage Project</div>
+                <div class="nav-header">The Blog</div>
                 <nav>
-                    <a href="/project/hidalgo-connect/forms"><i class="item-icon ti-write"></i> Forms</a>
-                    <a href="/project/hidalgo-connect/formdata"><i class="item-icon ti-receipt"></i> Form Data</a>
-                    <a href="/project/hidalgo-connect/faq-manager"><i class="item-icon ti-comments"></i> FAQ Manager</a>
+                    <a href="/project/hidalgo-connect/forms"><i class="item-icon ti-pin-alt"></i> Posts</a>
+                    <a href="/project/hidalgo-connect/faq-manager"><i class="item-icon ti-comments"></i> Comment Manager</a>
                 </nav>
 
-                <div class="nav-header">sam@podlogar.com</div>
+                <div class="nav-header">Your Account</div>
                 <nav>
                     <a href="/profile"><i class="item-icon ti-user"></i> View Profile</a>
                     <a href="/profile/edit"><i class="item-icon ti-pencil"></i> Edit Profile</a>
@@ -49,16 +51,106 @@
 
                     <div class="links pull-right">
                         <a href=".dashboard" class="visible-xs" data-toggle-class="openSidebar"><i class="ti-menu"></i></a>
-                        <!--<a href="/project"><i class="ti-control-shuffle"></i></a>-->
-                        <!--<a href="/"><i class="ti-home"></i></a>-->
+                        <a href="#"><i class="ti-control-shuffle"></i></a>
+                        <a href="#"><i class="ti-home"></i></a>
                     </div>
                 </div>
-                <div class="main-content">
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Hello</div>
-                        <div class="panel-body">
-                            this is the body
+                <div class="no-pad clearfix">
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Users
+                            </div>
+                            <div class="panel-body">
+                                <h1 class="text-center">412</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Pages
+                            </div>
+                            <div class="panel-body">
+                                <h1 class="text-center">189</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Comments
+                            </div>
+                            <div class="panel-body">
+                                <h1 class="text-center">62,045</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="panel panel-default panel-info">
+                                <div class="panel-heading">
+                                    From Mission-4.com
+                                </div>
+                                <div class="list-group">
+                                    <div class="list-group-item">
+                                        <h4 class="list-group-item-heading">What a Vue!</h4>
+                                        <div class="list-group-item-text">
+                                            Vue.js has leterally exploded in the...
+                                            <div>
+                                                <a href="#">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <h4 class="list-group-item-heading">Introducing Shift</h4>
+                                        <div class="list-group-item-text">
+                                            Shift is a UI taylor made for admin...
+                                            <div>
+                                                <a href="#">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <h4 class="list-group-item-heading">Hello World</h4>
+                                        <div class="list-group-item-text">
+                                            Manage your Blog Posts from Shift's...
+                                            <div>
+                                                <a href="#">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">Quick Post</div>
+                                <div class="panel-body">
+                                    <form>
+                                        <!-- Title Form Field -->
+                                        <fieldset class="form-group">
+                                            <label for="title" class="control-label">Title</label>
+                                            <input type="text" class="form-control" name="title" id="title">
+                                        </fieldset>
+
+                                        <!-- Content Form Field -->
+                                        <fieldset class="form-group">
+                                            <label for="content" class="control-label">Content</label>
+                                            <textarea class="form-control" id="simpleMDE"></textarea>
+                                        </fieldset>
+
+                                        <div>
+                                            <button class="btn btn-block btn-primary">Post</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -68,6 +160,7 @@
         </div>
 
         <script src="http://code.dev/jquery/jquery.min.js"></script>
-        <script src="assets/js/app.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/app-min.js"></script>
     </body>
 </html>
